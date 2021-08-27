@@ -3,6 +3,10 @@
   "main": "app/app.ts",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "build:ios": "npx nativescript-webpack build --env.verbose --env.ios --env.appPath=app --env.hmr=false",
+    "build:android": "npx nativescript-webpack build --env.verbose --env.android --env.appPath=app --env.hmr=false"
+  },
   "dependencies": {
     "@nativescript/core": "~8.0.0",
     "nativescript-vue": "~2.9.0"
